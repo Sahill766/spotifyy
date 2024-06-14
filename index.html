@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body class="varela-round-regular">
+    <div class="container">
+        <div class="container1">
+            <div class="left_por">
+                <div class="home">
+                    <div class="log">
+                        <img src="assets/logoes/logo.svg" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <a class="dev flex" href="#"><img src="assets/logoes/homelogo.svg" alt="Home"><span
+                                    class="flex align_items justify_contant">Home</span></a>
+                        </li>
+                        <li>
+                            <a class="dev flex" href="#"><img src="assets/logoes/searchico.svg" alt="Home"><span
+                                    class="flex align_items justify_contant">Search</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="library ">
+                    <div class="lib">
+                        <div class="header">
+                            <div class="header1">
+                                <div class="headlib">
+                                    <img src="assets/logoes/lib_ico.svg" alt="">
+                                    <span>Your Library</span>
+                                </div>
+                                <div class="headplus">
+                                    <img src="assets/logoes/plus_ico.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legal">
+                        <div class="leg_im">
+                            
+                            <div id="search-bar-container">
+                               <div><input type="text" id="search-bar" placeholder="Search songs..."></div> 
+                                <div><button id="search-icon"><img src="assets/logoes/searchico.svg" alt="Search Icon"></button></div>
+                            </div>
+
+
+
+                            <div class="recent">
+
+                                <span>Recent</span>
+
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                    class="Svg-sc-ytk21e-0 cAMMLk">
+                                    <path
+                                        d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z">
+                                    </path>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <ul id="playlist">
+                                <!-- Songs will be dynamically added here -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reallegal">
+                        <div class="leg1">
+
+                        </div>
+                        <div class="language">
+                            <button>
+                                <img src="assets/logoes/world.svg" alt="">
+                                <span>English</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_por">
+
+
+                <div class="nav">
+                    <header>
+                        <div class="head">
+                            <div class="arrow">
+                                <div class="lfar">
+                                    <img src="assets/logoes/left-arrow.svg" alt="">
+                                </div>
+                                <div class="riar">
+                                    <img src="assets/logoes/right-arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="siglog">
+                                <div class="loggg ">
+                                    <button>Explore Premium</button>
+                                </div>
+                                <div class="sign ">
+                                    <button>Install App</button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="main">
+
+
+
+                    <div class="so_po">
+                        <img id="now-playing-image" src="" alt="Now Playing Image">
+                        <div class="so_ti">
+                            <h1 id="now-playing-title"></h1>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="posters">
+                        <div class="box1">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Popular artists</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imagee" src="assets/image/singer1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imagee" src="assets/image/singer2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imagee" src="assets/image/singer4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imagee" src="assets/image/singer3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box2">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Popular albums</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/album1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Animal</span>
+                                        <span>Manan Bhardvaj,Vishal mishra , jaani</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/album2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Ek tha raja</span>
+                                        <span>Badshah</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/album3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Aavesham (Original Motion Picture Soundtrack)</span>
+                                        <span>Sushin Shyam,Vinayak Sasikumar</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/album4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Moosetape</span>
+                                        <span>Sidhu moosewala</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box3">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Popular radio</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/radio1.png">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/radio2.png">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/radio3.png">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/radio4.png">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Featured charts</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/chart1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/chart2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/chart3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/chart4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box5">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Featured podcast</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/podcast1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/podcast2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/podcast3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/podcast4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box6">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Zzzzz</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/zzzz1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/zzzz2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/zzzz3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/zzzz4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box7">
+                            <div class="part1">
+                                <div class="pop">
+                                    <a href="#">Tranding episodes</a>
+                                </div>
+                                <div class="show">
+                                    <a href="#">Show all</a>
+                                </div>
+                            </div>
+                            <div class="part2">
+                                <div class="con1">
+                                    <img class="imag" src="assets/image/episode1.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Pritam</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con2">
+                                    <img class="imag" src="assets/image/episode2.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Arijit singh</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con3">
+                                    <img class="imag" src="assets/image/episode3.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>A.R. rehman</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                                <div class="con4">
+                                    <img class="imag" src="assets/image/episode4.jpg">
+                                    <div class="play">
+                                        <img src="assets/logoes/play.svg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Anirudh ravichandar</span>
+                                        <span>Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <footer>
+                            <div class="info">
+                                <div class="info1">
+
+                                    <div class="info11">
+                                        <h3>Company</h3>
+                                        <ul class="listt">
+                                            <a class="jaan" href="#">
+                                                <li>About</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Jobs</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>For the record</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="info11">
+                                        <h3>Communities</h3>
+                                        <ul class="listt">
+                                            <a class="jaan" href="#">
+                                                <li>For Artists</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Developers</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Advertising</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Investors</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Vendors</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="info11">
+                                        <h3> Useful links</h3>
+                                        <ul class="listt">
+                                            <a class="jaan" href="#">
+                                                <li>Support</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Free Mobile App</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                    <div class="info11">
+                                        <h3> Spotify Plans</h3>
+                                        <ul class="listt">
+                                            <a class="jaan" href="#">
+                                                <li>Premium Individual</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Premium Duo</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Premium Family</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Premium Student</li>
+                                            </a>
+                                            <a class="jaan" href="#">
+                                                <li>Spotify Free</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="info2">
+                                    <a href="https://instagram.com/spotify">
+                                        <div class="social">
+                                            <img src="assets/logoes/instagrm.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="https://twitter.com/spotify">
+                                        <div class="social">
+                                            <img src="assets/logoes/twitter.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="https://facebook.com/spotify">
+                                        <div class="social">
+                                            <img src="assets/logoes/facebook.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="yer">
+                                <span>© 2024 Spotify AB</span>
+                            </div>
+                        </footer>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="foott">
+
+            <div class="lef_con">
+                <input id="speed-slider" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+            </div>
+
+
+            <div class="mid_con">
+                <div id="player">
+                    <audio id="audio-player" controls style="display:none;"></audio>
+                    <div id="player-controls">
+
+                        <button class="so_co" id="shuffle">
+                            <img src="assets/logoes/suffle.svg" alt="">
+                        </button>
+
+                        <button id="prev" class="control-button">
+                            <img src="assets/logoes/playprs.svg" alt="Previous">
+                        </button>
+                        <button id="play-pause" class="control-button">
+                            <img src="assets/logoes/play.svg" alt="Play/Pause">
+                        </button>
+                        <button id="next" class="control-button">
+                            <img src="assets/logoes/playnxt.svg" alt="Next">
+                        </button>
+
+                        <button class="so_co" id="shuffle">
+                            <img src="assets/logoes/loop.svg" alt="">
+                        </button>
+
+                    </div>
+
+
+                    <div class="pro_tim">
+                        <span id="current-time">00:00</span>
+                        <div id="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                        <span id="total-duration">00:00</span>
+                    </div>
+
+
+                    <ul id="playlist"></ul>
+                </div>
+            </div>
+
+            <div class="rig_con">
+                <div id="volume-container">
+                    <label for="volume-slider">Volume</label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+        <script src="spotify.js"></script>
+    </div>
+
+</body>
+
+</html>
